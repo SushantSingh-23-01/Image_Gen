@@ -255,7 +255,7 @@ class Trainer:
                     
                     if self.weight_clipping_value is not None:
                         for p in self.critic.parameters():
-                            p.data.clamp_(self.weight_clipping_value, self.weight_clipping_value)
+                            p.data.clamp_(-self.weight_clipping_value, self.weight_clipping_value)
                             
                     if i % self.critic_step == 0:
                         self.generator.zero_grad()
