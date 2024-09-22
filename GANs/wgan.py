@@ -321,7 +321,7 @@ class tconfig:
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
    
     model_save_path = r''
-    model_load_path = model_save_path
+    model_load_path = r''
 
 def main():
     dataset = ImageDataset(r'', mconfig.img_size)
