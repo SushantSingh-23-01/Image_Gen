@@ -336,7 +336,7 @@ def main():
 
     trainer = Trainer(generator, discriminator, optimizerG, optimizerD, dataloader, 
                       tconfig.num_epochs, tconfig.device, tconfig.model_save_path, tconfig.model_load_path,
-                      tconfig.critic_step, tconfig.weight_clip, tconfig.gradient_penalty_factor)
+                      tconfig.critic_steps, tconfig.weight_clip, tconfig.gradient_penalty_factor)
     trainer.train()   
     
     trainer.generate_fake_images()
