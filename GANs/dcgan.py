@@ -181,9 +181,6 @@ class Trainer:
         if self.log_losses is True:
             self.G_losses = []
             self.D_losses = []
-            
-        self.G_grads_mean = []
-        self.G_grads_std = []
         
     def save_checkpoint(self):
         torch.save({
