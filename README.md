@@ -1,4 +1,4 @@
-# Image Generation Models
+# Image Generation Architectures
 This repository is aimed at exploring various deep learning architectures for image geneartion. The implementation is done in PyTorch. 
 
 ## Models:
